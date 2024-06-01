@@ -133,10 +133,112 @@
 
 //  var str = "hello";
 //  console.log(reverseString(str));
-const str = "abbccdde";
-var removeDuplicate =  function(str){
-  const arr = Array.from(str);
-  const newArr = [...new Set(arr)];
-  return newArr;
-}
-console.log(removeDuplicate(str));
+
+//RemoveDupliacte
+// const str = "abbccdde";
+// var removeDuplicate =  function(str){
+//   const arr = Array.from(str);
+//   const newArr = [...new Set(arr)];
+//   return newArr;
+// }
+// console.log(removeDuplicate(str));
+
+//Anagram code
+
+// let s = 'abhi';
+// let t = 'achi';
+
+// if(s.length != t.length){
+//   console.log(false);
+//   return;
+// }else{
+//   for(let i=0; i<s.length; i++){
+//     if(s[i] != t[i]){
+//       console.log(false);
+//       return;
+//     }
+//   }
+// }
+// console.log(true);
+
+ //Max nd min
+
+//  function findMaxndMin(arr){
+//   if(arr.length === 0)
+//   return {max : null, min: null};
+
+//   let max = arr[0];
+//   let min = arr[0];
+
+//    for(let i=0; i<arr.length; i++){
+//     if(arr[i] > max){
+//       max = arr[i];
+//     }
+
+//     if(arr[i] < min){
+//       min = arr[i];
+//     }
+//    }
+//    return {max : max, min : min};
+
+//  }
+
+//  const arr = [5, 3, 8, 1, 12, 7]
+
+//  const res = findMaxndMin(arr);
+//  console.log('Maximum:', res.max);
+//  console.log('Minium:' , res.min);
+
+// FindDuplicate
+
+// function FindDuplicate(arr){
+//   let duplicate = [];
+//   for(let i=0; i<arr.length-1; i++){
+//     for(let j=i+1; j<arr.length; j++){
+//       if(arr[i] === arr[j] && !duplicate.includes(arr[i])){
+//         duplicate.push(arr[i]);
+//       }
+//     }
+//   }
+//   return duplicate;
+// }
+
+//  const arr = [1, 2, 3, 4, 3, 4, 5, 7, 2];
+//  console.log(FindDuplicate(arr));
+
+//map nd reduce function
+
+// const student = [
+//   {name:'Smaith', rollNumber:31, marks:80},
+//   {name:'Jeany', rollNumber:21, marks:60},
+//   {name:'John', rollNumber:15, marks:30},
+//   {name:'Tiger', rollNumber:43, marks:100},
+  
+// ]
+// const totalMarks = student.map((stu) => {
+//   if(stu.marks<60){
+//     stu.marks += 20;
+//   }
+//   return stu;
+// }).filter((stu) => stu.marks>60).reduce((acc, curr) => acc+curr.marks, 0);
+
+// console.log(totalMarks);
+
+
+//Reduce function
+
+let product = [
+  {name:'banana', price:5},
+  {name:'apple', price:3},
+  {name:'orange', price:8},
+  {name:'mango', price:9},
+  {name:'kiwi', price:1},
+]
+
+let sum = product.reduce((acc, curr) => acc+curr.price, 0);
+console.log(sum);
+
+
+
+
+
